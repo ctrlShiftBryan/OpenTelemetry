@@ -2,6 +2,20 @@
 
 echo "Cleaning up Kubernetes resources..."
 
+# Remove Elasticsearch resources
+echo "Removing Elasticsearch resources..."
+kubectl delete -f elasticsearch/
+
+
+# Remove Fluentd resources
+echo "Removing Fluentd resources..."
+kubectl delete -f fluentd/
+
+
+# Remove Kibana resources
+echo "Removing Kibana resources..."
+kubectl delete -f kibana/
+
 # Remove Grafana resources
 echo "Removing Grafana resources..."
 kubectl delete -f grafana/
