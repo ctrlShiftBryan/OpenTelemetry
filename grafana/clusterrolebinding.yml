@@ -9,6 +9,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: opentelemetry-demo-grafana
+    namespace: default  # Add this line
 roleRef:
   kind: ClusterRole
   name: opentelemetry-demo-grafana-clusterrole
