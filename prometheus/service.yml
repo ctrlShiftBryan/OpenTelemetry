@@ -8,7 +8,6 @@ metadata:
     app.kubernetes.io/version: v2.46.0
     app.kubernetes.io/part-of: prometheus
   name: opentelemetry-demo-prometheus-server
-  namespace: otel-demo
 spec:
   ports:
     - name: http

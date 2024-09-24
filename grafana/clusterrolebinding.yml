@@ -9,7 +9,6 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: opentelemetry-demo-grafana
-    namespace: otel-demo
 roleRef:
   kind: ClusterRole
   name: opentelemetry-demo-grafana-clusterrole
